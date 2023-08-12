@@ -1,0 +1,12 @@
+.break{
+  height: 6px;
+  background-color: rgb(58, 58, 60);
+  z-index: 3;
+}
+.blur-content{
+  filter: blur(5px);
+  transition: all .5s ease-in-out;
+}
+/* .main{
+  width: 1850px;
+} */
