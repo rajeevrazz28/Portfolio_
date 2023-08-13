@@ -23,8 +23,8 @@ export const WorkData = [
 	{
 		title: "PortFolio",
 		desc: "My Portfolio Web Application",
-		tech: ["React.js", "Css","JavaScript", "Node.js"],
-		gitlink: "//github.com/rajeevrazz28",
-		site: "//",
+		tech: ["React.js", "Css","JavaScript", "Node.js","MongoDB"],
+		gitlink: "//github.com/rajeevrazz28/Portfolio_",
+		site: "//r4zz-portfolio.netlify.app/",
 	},
 ];

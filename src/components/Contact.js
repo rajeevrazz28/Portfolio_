@@ -11,8 +11,6 @@ const Contact = () => {
         email:'',
         
     });
-    // const [email, setEmail] = useState('');
-    // const [content, setContent] = useState('');
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setData((prevData) => ({
@@ -20,20 +18,13 @@ const Contact = () => {
           [name]: value,
         }));
       };
-
-    // const reset =()=>{
-    //     setContent('');
-    //     setName('');
-    //     setEmail('');
-
-    // }
   
     const handleSubmit = async (e) => {
 
         e.preventDefault();
        try {
-        const response = await axios.post('http://localhost:5000/api/submit',  data );
-        console.log('User added:', response.data);
+        await axios.post('https://poortfolio.onrender.com/api/submit',  data );
+        // console.log('User added:', response.data);
         setData({ name: '', email: '', content: '', });
       } catch (error) {
         console.error('Error adding user:', error);
@@ -73,6 +64,7 @@ const Contact = () => {
                             <p>Say Hello</p>
                             <Link className='hello-links' to="//wa.me/+917870158183" target='_blank'>wa.me/rajeev</Link>
                             <a className='hello-links' href="mailto:ranjanrajeevasgkrs@gmail.com" >ranjanrajeevasgkrs@gmail.com</a>
+                            <Link className='hello-links' to="//wa.me/+917870158183" target='_blank'>+91 7870158183</Link>
                         </div>
                     </motion.div>
                     <motion.div className="right-box" initial={{opacity: 0, y: '50px'}} whileInView={verticalLeft}>

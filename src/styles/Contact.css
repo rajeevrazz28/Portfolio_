@@ -93,7 +93,7 @@ input, textarea {
 }
 
 /* Media Queries */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .contact-box {
         display: grid;
         grid-template-columns: 1fr;
@@ -104,14 +104,28 @@ input, textarea {
         width: 90%;
         margin: 0 auto;
     }
+    .contact-heading p,.contact-hello p,.hello-links, input, textarea {
+        font-size: 80%;
+        width: auto;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
     .contact-heading p,.contact-hello p,.hello-links, input, textarea {
         font-size: 60%;
     }
+    .contact-box {
+        display:grid;
+       grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
 
     .right-box {
+        width: 70%;
         font-size: 70%;
+        margin: auto;
+    }
+    .contact-heading p {
+        width: auto;
     }
 }
